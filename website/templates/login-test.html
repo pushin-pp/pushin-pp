@@ -1,0 +1,26 @@
+{% extends "base.html" %} {% block title %}Login{% endblock %} 
+    {% block content %}
+        <main id="main-holder">
+            <h1 id="login-header">Login</h1>
+            
+            <div id="login-error-msg-holder">
+                <p id="login-error-msg">Invalid username <span id="error-msg-second-line">and/or password</span></p>
+            </div>
+            
+            <form id="login-form">
+                <!-- username text box-->
+                <input type="text" name="username" id="username-field" class="login-form-field" placeholder="Username">
+                <!-- password text box-->
+                <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Password">
+                <!-- login button-->
+                <input type="submit" value="Login" id="login-form-submit">
+            </form>
+              
+        </main>  
+
+    <!-- JavaScript -->
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    {% endblock %}
