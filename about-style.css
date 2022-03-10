@@ -22,8 +22,15 @@
 
 .logo {
     border-radius: 25%;
-    height: 400px;
-    width: 400px;
+    height: 350px;
+    width: 350px;
+}
+
+.col-md-12 img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20pxs;
 }
 
 .navbar {
