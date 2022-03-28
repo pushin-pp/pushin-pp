@@ -60,16 +60,21 @@ def make_classes_json(webscraperJson, classesJson):
         class_title = curr["Class Title"]
         credit_hours = curr["Credit Hours"]
         times = curr["Times"]
+        #Fill in later
+        class_rating = "5.0"
 
         if class_code not in class_data: #if we're reading new class
             class_data[class_code] = {}
             class_data[class_code]["Class Title"] = class_title
             class_data[class_code]["Credit Hours"] = credit_hours
+            class_data[class_code]["Class Rating"] = class_rating
+
 
             class_data[class_code]["Sections"] = []
 
         curr_section = {"Section Number" : section_num, "Times" : times}
         class_data[class_code]["Sections"].append(curr_section)
+    
 
     with open(classesJson, 'w', encoding='utf-8') as jsonf:
         jsonf.write(json.dumps(class_data, indent=4))
@@ -82,7 +87,7 @@ def make_classes_json(webscraperJson, classesJson):
 # make_classes_json(webscraperJson, classesJson)
 
 
-def make_professors_json(webscraperJson, professorJson):
+def make_professors_json(webscraperJson, professorJson, ratingCsv):
     webscraper_file = open(webscraperJson)
     data = json.load(webscraper_file)
     professor_data = {}
@@ -96,16 +101,26 @@ def make_professors_json(webscraperJson, professorJson):
         times = curr["Times"]
         professor_name = curr["Professors"]
         #to be filled
-        rating = "5.0"
+        professor_rating = "5.0"
 
         if professor_name not in professor_data: #if we're reading new professor
             professor_data[professor_name] = {}
-            professor_data[professor_name]["Rating"] = rating
+            professor_data[professor_name]["Professor Rating"] = professor_rating
 
             professor_data[professor_name]["Courses"] = []
 
         curr_course = {"Class Title" : class_title, "Section Number" : section_num, "Times" : times}
         professor_data[professor_name]["Courses"].append(curr_course)
+
+    with open(ratingCsv, encoding='utf-8') as csvf:
+        csvReader = csv.DictReader(csvf)
+         
+        # Convert each row into a dictionary
+        # and add it to data
+        for rows in csvReader:
+            newRow = {}
+            print(rows)
+            #create newRow with spaces stripped
 
 
 

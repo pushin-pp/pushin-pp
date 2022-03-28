@@ -1,6 +1,8 @@
 {
     "D. Fossati": {
-        "Rating": "5.0",
+        "Quality": "3.6",
+        "Level of Difficulty": "4.3",
+        "Would Take Again": "64%",
         "Courses": [
             {
                 "Class Title": "Introduction To Computer Science I",
@@ -40,7 +42,9 @@
         ]
     },
     "A. Julian": {
-        "Rating": "5.0",
+        "Quality": "5",
+        "Level of Difficulty": "2.5",
+        "Would Take Again": "100%",
         "Courses": [
             {
                 "Class Title": "Introduction to Computer Science II",
@@ -50,7 +54,9 @@
         ]
     },
     "J. Ho": {
-        "Rating": "5.0",
+        "Quality": "4.7",
+        "Level of Difficulty": "3.7",
+        "Would Take Again": "100%",
         "Courses": [
             {
                 "Class Title": "Introduction to Computer Science II",
@@ -80,7 +86,9 @@
         ]
     },
     "A. Pouriyeh": {
-        "Rating": "5.0",
+        "Quality": "3",
+        "Level of Difficulty": "3",
+        "Would Take Again": "67%",
         "Courses": [
             {
                 "Class Title": "Foundations of Computer Science",
@@ -90,7 +98,9 @@
         ]
     },
     "L. Zhao": {
-        "Rating": "5.0",
+        "Quality": "3",
+        "Level of Difficulty": "3",
+        "Would Take Again": "67%",
         "Courses": [
             {
                 "Class Title": "Data Structures and Algorithms",
@@ -125,7 +135,9 @@
         ]
     },
     "J. Choi": {
-        "Rating": "5.0",
+        "Quality": "4.3",
+        "Level of Difficulty": "3.9",
+        "Would Take Again": "50%",
         "Courses": [
             {
                 "Class Title": "Data Structures and Algorithms",
@@ -155,7 +167,9 @@
         ]
     },
     "S. Cheung": {
-        "Rating": "5.0",
+        "Quality": null,
+        "Level of Difficulty": null,
+        "Would Take Again": null,
         "Courses": [
             {
                 "Class Title": "Computer Architecture/Machine Level Programming",
@@ -175,7 +189,9 @@
         ]
     },
     "E. Agichtein": {
-        "Rating": "5.0",
+        "Quality": "3.5",
+        "Level of Difficulty": "4.2",
+        "Would Take Again": "50%",
         "Courses": [
             {
                 "Class Title": "Artificial Intelligence",
@@ -200,7 +216,9 @@
         ]
     },
     "S. La Fleur": {
-        "Rating": "5.0",
+        "Quality": "2.4",
+        "Level of Difficulty": "3.7",
+        "Would Take Again": "31%",
         "Courses": [
             {
                 "Class Title": "Artificial Intelligence",
@@ -210,7 +228,9 @@
         ]
     },
     "M. Grigni": {
-        "Rating": "5.0",
+        "Quality": "3.9",
+        "Level of Difficulty": "3.7",
+        "Would Take Again": "100%",
         "Courses": [
             {
                 "Class Title": "Analysis of Algorithms",
@@ -230,7 +250,9 @@
         ]
     },
     "D. Arnold": {
-        "Rating": "5.0",
+        "Quality": "2",
+        "Level of Difficulty": "4.4",
+        "Would Take Again": "30%",
         "Courses": [
             {
                 "Class Title": "Systems Programming",
@@ -255,7 +277,9 @@
         ]
     },
     "S. Madamanchi": {
-        "Rating": "5.0",
+        "Quality": "5",
+        "Level of Difficulty": "1",
+        "Would Take Again": "100%",
         "Courses": [
             {
                 "Class Title": "Computer Science Practicum",
@@ -265,7 +289,9 @@
         ]
     },
     "N. El-Sayed": {
-        "Rating": "5.0",
+        "Quality": "4.4",
+        "Level of Difficulty": "3.3",
+        "Would Take Again": "77%",
         "Courses": [
             {
                 "Class Title": "Database Systems",
@@ -280,7 +306,9 @@
         ]
     },
     "K. Mandelberg": {
-        "Rating": "5.0",
+        "Quality": "2.2",
+        "Level of Difficulty": "3.7",
+        "Would Take Again": "0%",
         "Courses": [
             {
                 "Class Title": "Operating Systems",
@@ -295,7 +323,9 @@
         ]
     },
     "Y. Vigfusson": {
-        "Rating": "5.0",
+        "Quality": "4.5",
+        "Level of Difficulty": "3.7",
+        "Would Take Again": "100%",
         "Courses": [
             {
                 "Class Title": "Computer Security",
@@ -325,7 +355,9 @@
         ]
     },
     "E. Wall": {
-        "Rating": "5.0",
+        "Quality": null,
+        "Level of Difficulty": null,
+        "Would Take Again": null,
         "Courses": [
             {
                 "Class Title": "Topics in Computer Science: Human-Computer Interaction",
@@ -360,7 +392,9 @@
         ]
     },
     "J. Brody": {
-        "Rating": "5.0",
+        "Quality": null,
+        "Level of Difficulty": null,
+        "Would Take Again": null,
         "Courses": [
             {
                 "Class Title": "Topics in Computer Science: Human-Computer Interaction",
@@ -375,7 +409,9 @@
         ]
     },
     "C. Yang": {
-        "Rating": "5.0",
+        "Quality": "3.5",
+        "Level of Difficulty": "3.9",
+        "Would Take Again": "60%",
         "Courses": [
             {
                 "Class Title": "Directed Research",
@@ -405,7 +441,9 @@
         ]
     },
     "Qin/Pittard": {
-        "Rating": "5.0",
+        "Quality": null,
+        "Level of Difficulty": null,
+        "Would Take Again": null,
         "Courses": [
             {
                 "Class Title": "Machine Learning",
@@ -415,7 +453,9 @@
         ]
     },
     "L. Xiong": {
-        "Rating": "5.0",
+        "Quality": "5",
+        "Level of Difficulty": "3.7",
+        "Would Take Again": "100%",
         "Courses": [
             {
                 "Class Title": "Data Privacy and Security",
@@ -435,7 +475,9 @@
         ]
     },
     "M. Bhasin": {
-        "Rating": "5.0",
+        "Quality": null,
+        "Level of Difficulty": null,
+        "Would Take Again": null,
         "Courses": [
             {
                 "Class Title": "Directed Study",
@@ -460,7 +502,9 @@
         ]
     },
     "L. Ruthotto": {
-        "Rating": "5.0",
+        "Quality": null,
+        "Level of Difficulty": null,
+        "Would Take Again": null,
         "Courses": [
             {
                 "Class Title": "Rotation Project",
@@ -480,7 +524,9 @@
         ]
     },
     "R. Sameni": {
-        "Rating": "5.0",
+        "Quality": null,
+        "Level of Difficulty": null,
+        "Would Take Again": null,
         "Courses": [
             {
                 "Class Title": "Rotation Project",
@@ -490,7 +536,9 @@
         ]
     },
     "A. Sarker": {
-        "Rating": "5.0",
+        "Quality": null,
+        "Level of Difficulty": null,
+        "Would Take Again": null,
         "Courses": [
             {
                 "Class Title": "Rotation Project",
@@ -510,7 +558,9 @@
         ]
     },
     "X. Yang": {
-        "Rating": "5.0",
+        "Quality": null,
+        "Level of Difficulty": null,
+        "Would Take Again": null,
         "Courses": [
             {
                 "Class Title": "Rotation Project",
@@ -525,7 +575,9 @@
         ]
     },
     "V. Sukhatme": {
-        "Rating": "5.0",
+        "Quality": null,
+        "Level of Difficulty": null,
+        "Would Take Again": null,
         "Courses": [
             {
                 "Class Title": "Rotation Project",
@@ -535,7 +587,9 @@
         ]
     },
     "S. Raikar": {
-        "Rating": "5.0",
+        "Quality": null,
+        "Level of Difficulty": null,
+        "Would Take Again": null,
         "Courses": [
             {
                 "Class Title": "Rotation Project",
@@ -545,7 +599,9 @@
         ]
     },
     "G. Clifford": {
-        "Rating": "5.0",
+        "Quality": null,
+        "Level of Difficulty": null,
+        "Would Take Again": null,
         "Courses": [
             {
                 "Class Title": "Rotation Project",
@@ -560,7 +616,9 @@
         ]
     },
     "B. Mahmoudi": {
-        "Rating": "5.0",
+        "Quality": null,
+        "Level of Difficulty": null,
+        "Would Take Again": null,
         "Courses": [
             {
                 "Class Title": "Rotation Project",
@@ -580,7 +638,9 @@
         ]
     },
     "Z. Qin": {
-        "Rating": "5.0",
+        "Quality": null,
+        "Level of Difficulty": null,
+        "Would Take Again": null,
         "Courses": [
             {
                 "Class Title": "Rotation Project",
@@ -600,7 +660,9 @@
         ]
     },
     "M. Reyna": {
-        "Rating": "5.0",
+        "Quality": null,
+        "Level of Difficulty": null,
+        "Would Take Again": null,
         "Courses": [
             {
                 "Class Title": "Rotation Project",
@@ -610,7 +672,9 @@
         ]
     },
     "A. Wildani": {
-        "Rating": "5.0",
+        "Quality": "2.6",
+        "Level of Difficulty": "4",
+        "Would Take Again": "37%",
         "Courses": [
             {
                 "Class Title": "Research",
@@ -625,7 +689,9 @@
         ]
     },
     "H. Wu": {
-        "Rating": "5.0",
+        "Quality": null,
+        "Level of Difficulty": null,
+        "Would Take Again": null,
         "Courses": [
             {
                 "Class Title": "Research",
@@ -640,7 +706,9 @@
         ]
     },
     "I. Banerjee": {
-        "Rating": "5.0",
+        "Quality": "3",
+        "Level of Difficulty": "4",
+        "Would Take Again": "0%",
         "Courses": [
             {
                 "Class Title": "Research",
@@ -655,7 +723,9 @@
         ]
     },
     "R. Kamaleswaran": {
-        "Rating": "5.0",
+        "Quality": null,
+        "Level of Difficulty": null,
+        "Would Take Again": null,
         "Courses": [
             {
                 "Class Title": "Research",
@@ -670,7 +740,9 @@
         ]
     },
     "V. Sunderam": {
-        "Rating": "5.0",
+        "Quality": "3.7",
+        "Level of Difficulty": "3.2",
+        "Would Take Again": "63%",
         "Courses": [
             {
                 "Class Title": "Graduate Seminar",
@@ -690,7 +762,9 @@
         ]
     },
     "T. Li": {
-        "Rating": "5.0",
+        "Quality": null,
+        "Level of Difficulty": null,
+        "Would Take Again": null,
         "Courses": [
             {
                 "Class Title": "Introduction To Computer Science I w/Laboratory",
@@ -735,7 +809,9 @@
         ]
     },
     "P. Oser": {
-        "Rating": "5.0",
+        "Quality": null,
+        "Level of Difficulty": null,
+        "Would Take Again": null,
         "Courses": [
             {
                 "Class Title": "Introduction to Computer Science II",
@@ -745,7 +821,9 @@
         ]
     },
     "J. Hulgan": {
-        "Rating": "5.0",
+        "Quality": null,
+        "Level of Difficulty": null,
+        "Would Take Again": null,
         "Courses": [
             {
                 "Class Title": "Mathematical Foundation of Computer Science",
