@@ -1,34 +1,3 @@
-<<<<<<< HEAD
-.logo {
-    border-radius: 25%;
-}
-
-.navbar {
-    background: linear-gradient(120deg, #7f70f5, #0ea0ff);
-    height: 85px;
-}
-
-.navbar-brand {
-    margin-right: 200px;
-    font-size: 25px;
-}
-
-.students {
-    width: 900px;
-}
-
-#heading {
-    letter-spacing: 0.3ch;
-}
-
-#elevator {
-    border: 3px solid #333333;
-    border-radius: 2% 6% 5% 4% / 1% 1% 2% 4%;
-    letter-spacing: 0.3ch;
-    background: #ffffff;
-    position: relative;
-}
-=======
 * {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
@@ -158,4 +127,3 @@
     transform: translateY(-25px);
 }
 
->>>>>>> 30ef42190386a746f8a72bbcfe791ac4652b228b
