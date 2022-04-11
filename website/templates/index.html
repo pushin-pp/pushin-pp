@@ -1,191 +1,542 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Home - Brand</title>
+    <title>new_schedule_sample</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
-    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,800&amp;display=swap">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/Event-Schedule.css">
+    <link rel="stylesheet" href="assets/css/Floating-Input.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/css/pikaday.min.css">
+    <link rel="stylesheet" href="assets/css/Pretty-Search-Form.css">
+    <link rel="stylesheet" href="assets/css/Soft-UI-Aside-Navbar.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
-<body>
-    <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-white portfolio-navbar gradient">
-        <div class="container"><a class="navbar-brand logo" href="#">Pushin P</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navbarNav"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="/login.html">Login</a></li>
+<body><nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-white portfolio-navbar gradient">
+    <div class="container"><a class="navbar-brand logo" href="#">Pushin P</a><button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+        <div id="navbarNav" class="collapse navbar-collapse">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link active" href="login.html">Login</a></li>
+                <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Search
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          <li><a class="dropdown-item" href="#">Classes</a></li>
+                          <li><a class="dropdown-item" href="#">Professors</a></li>
+                        </ul>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+    <form class="search-form">
+        <div class="input-group"><span class="input-group-text"><i class="fa fa-search"></i></span><input class="form-control" type="text" placeholder="I am looking for.."><button class="btn btn-light" type="button">Search </button></div>
+    </form><link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+
+
+<div class="event-schedule-area-two bg-color pad100">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-title text-center">
+                    <div class="title-text">
+                        <h2>Pushin's Schedule</h2>
+                    </div>
+                    <p>
+                        <button type="button" onclick="alert('Hello world!')">Add Class To Schedule</button>
+                    </p>
+                </div>
+            </div>
+            
+            <!-- /.col end-->
+        </div>
+        <!-- row end-->
+        <div class="row">
+            <div class="col-lg-12">
+                <ul class="nav custom-tab" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link" id="monday-tab" data-toggle="tab" href="#monday" role="tab" aria-controls="monday" aria-selected="false">Monday</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="tuesday-tab" data-toggle="tab" href="#tuesday" role="tab" aria-controls="tuesday" aria-selected="true">Tuesday</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="wednesday-tab" data-toggle="tab" href="#wednesday" role="tab" aria-controls="wednesday" aria-selected="false">Wednesday</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="thursday-tab" data-toggle="tab" href="#thursday" role="tab" aria-controls="thursday" aria-selected="false">Thursday</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="friday-tab" data-toggle="tab" href="#friday" role="tab" aria-controls="friday" aria-selected="false">Friday</a>
+                    </li>
                 </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade active show" id="monday" role="tabpanel">
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="text-center" scope="col">Time</th>
+                                        <th scope="col">Course</th>
+                                        <th scope="col">Location</th>
+                                        <th class="text-center" scope="col">Info</th>
+                                        <th scope="col">Remove</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="inner-box">
+                                        <th scope="row">
+                                            <div class="event-date">
+                                                <p>8:30 AM - 9:45 AM</p>
+                                            </div>
+                                        </th>
+                                        <td>
+                                            <div class="event-wrap">
+                                                <h3><a href="#">CS 326: Analysis of Algorithms</a></h3>
+                                                <div class="meta">
+                                                    <div class="organizers">
+                                                        <a href="https://www.ratemyprofessors.com/ShowRatings.jsp?tid=1083351" target="_blank">Michaelangelo Grigni</a>
+                                                    </div>
+                                                    <div class="categories">
+                                                        <a href="#">Mon/Wed</a>
+                                                    </div>
+                                                    <div class="time">
+                                                        <span></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="r-no">
+                                                <span>Math &amp; Science Center W201</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="primary-btn">
+                                                <a class="btn btn-primary">Read More</a>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <input type="button" value="Remove" onclick="remove()">
+                                        </td>
+                                    </tr>
+                                    <tr class="inner-box">
+                                        <th scope="row">
+                                            <div class="event-date">
+                                                <p>10:00 AM - 10:50 AM</p>
+                                            </div>
+                                        </th>
+                                        <td>
+                                            <div class="event-wrap">
+                                                <h3><a href="#">PHIL 200W: Ancient Greek Philosophy</a></h3>
+                                                <div class="meta">
+                                                    <div class="organizers">
+                                                        <a href="https://www.ratemyprofessors.com/ShowRatings.jsp?tid=2399919" target="_blank">Jeremy Bell</a>
+                                                    </div>
+                                                    <div class="categories">
+                                                        <a href="#">Mon/Wed/Fri</a>
+                                                    </div>
+                                                    <div class="time">
+                                                        <span></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="r-no">
+                                                <span>Callaway Center N118</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="primary-btn">
+                                                <a class="btn btn-primary">Read More</a>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <input type="button" value="Remove" onclick="remove()">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade active show" id="tuesday" role="tabpanel" aria-labelledby="tuesday-tab">
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="text-center" scope="col">Time</th>
+                                        <th scope="col">Course</th>
+                                        <th scope="col">Location</th>
+                                        <th class="text-center" scope="col">Info</th>
+                                        <th scope="col">Remove</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="inner-box">
+                                        <th scope="row">
+                                            <div class="event-date">
+                                                <p>8:30 AM - 9:45 AM</p>
+                                            </div>
+                                        </th>
+                                        <td>
+                                            <div class="event-wrap">
+                                                <h3><a href="#">CS 326: Analysis of Algorithms</a></h3>
+                                                <div class="meta">
+                                                    <div class="organizers">
+                                                        <a href="https://www.ratemyprofessors.com/ShowRatings.jsp?tid=1083351" target="_blank">Michaelangelo Grigni</a>
+                                                    </div>
+                                                    <div class="categories">
+                                                        <a href="#">Mon/Wed</a>
+                                                    </div>
+                                                    <div class="time">
+                                                        <span></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="r-no">
+                                                <span>Math &amp; Science Center W201</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="primary-btn">
+                                                <a class="btn btn-primary">Read More</a>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <input type="button" value="Remove" onclick="remove()">
+                                        </td>
+                                    </tr>
+                                    <tr class="inner-box">
+                                        <th scope="row">
+                                            <div class="event-date">
+                                                <p>10:00 AM - 10:50 AM</p>
+                                            </div>
+                                        </th>
+                                        <td>
+                                            <div class="event-wrap">
+                                                <h3><a href="#">PHIL 200W: Ancient Greek Philosophy</a></h3>
+                                                <div class="meta">
+                                                    <div class="organizers">
+                                                        <a href="https://www.ratemyprofessors.com/ShowRatings.jsp?tid=2399919" target="_blank">Jeremy Bell</a>
+                                                    </div>
+                                                    <div class="categories">
+                                                        <a href="#">Mon/Wed/Fri</a>
+                                                    </div>
+                                                    <div class="time">
+                                                        <span></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="r-no">
+                                                <span>Callaway Center N118</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="primary-btn">
+                                                <a class="btn btn-primary">Read More</a>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <input type="button" value="Remove" onclick="remove()">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade active show" id="wednesday" role="tabpanel" aria-labelledby="wednesday-tab">
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="text-center" scope="col">Time</th>
+                                        <th scope="col">Course</th>
+                                        <th scope="col">Location</th>
+                                        <th class="text-center" scope="col">Info</th>
+                                        <th scope="col">Remove</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="inner-box">
+                                        <th scope="row">
+                                            <div class="event-date">
+                                                <p>8:30 AM - 9:45 AM</p>
+                                            </div>
+                                        </th>
+                                        <td>
+                                            <div class="event-wrap">
+                                                <h3><a href="#">CS 326: Analysis of Algorithms</a></h3>
+                                                <div class="meta">
+                                                    <div class="organizers">
+                                                        <a href="https://www.ratemyprofessors.com/ShowRatings.jsp?tid=1083351" target="_blank">Michaelangelo Grigni</a>
+                                                    </div>
+                                                    <div class="categories">
+                                                        <a href="#">Mon/Wed</a>
+                                                    </div>
+                                                    <div class="time">
+                                                        <span></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="r-no">
+                                                <span>Math &amp; Science Center W201</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="primary-btn">
+                                                <a class="btn btn-primary">Read More</a>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <input type="button" value="Remove" onclick="remove()">
+                                        </td>
+                                    </tr>
+                                    <tr class="inner-box">
+                                        <th scope="row">
+                                            <div class="event-date">
+                                                <p>10:00 AM - 10:50 AM</p>
+                                            </div>
+                                        </th>
+                                        <td>
+                                            <div class="event-wrap">
+                                                <h3><a href="#">PHIL 200W: Ancient Greek Philosophy</a></h3>
+                                                <div class="meta">
+                                                    <div class="organizers">
+                                                        <a href="https://www.ratemyprofessors.com/ShowRatings.jsp?tid=2399919" target="_blank">Jeremy Bell</a>
+                                                    </div>
+                                                    <div class="categories">
+                                                        <a href="#">Mon/Wed/Fri</a>
+                                                    </div>
+                                                    <div class="time">
+                                                        <span></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="r-no">
+                                                <span>Callaway Center N118</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="primary-btn">
+                                                <a class="btn btn-primary">Read More</a>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <input type="button" value="Remove" onclick="remove()">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade active show" id="thursday" role="tabpanel" aria-labelledby="thursday-tab">
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="text-center" scope="col">Time</th>
+                                        <th scope="col">Course</th>
+                                        <th scope="col">Location</th>
+                                        <th class="text-center" scope="col">Info</th>
+                                        <th scope="col">Remove</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="inner-box">
+                                        <th scope="row">
+                                            <div class="event-date">
+                                                <p>8:30 AM - 9:45 AM</p>
+                                            </div>
+                                        </th>
+                                        <td>
+                                            <div class="event-wrap">
+                                                <h3><a href="#">CS 326: Analysis of Algorithms</a></h3>
+                                                <div class="meta">
+                                                    <div class="organizers">
+                                                        <a href="https://www.ratemyprofessors.com/ShowRatings.jsp?tid=1083351" target="_blank">Michaelangelo Grigni</a>
+                                                    </div>
+                                                    <div class="categories">
+                                                        <a href="#">Mon/Wed</a>
+                                                    </div>
+                                                    <div class="time">
+                                                        <span></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="r-no">
+                                                <span>Math &amp; Science Center W201</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="primary-btn">
+                                                <a class="btn btn-primary">Read More</a>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <input type="button" value="Remove" onclick="remove()">
+                                        </td>
+                                    </tr>
+                                    <tr class="inner-box">
+                                        <th scope="row">
+                                            <div class="event-date">
+                                                <p>10:00 AM - 10:50 AM</p>
+                                            </div>
+                                        </th>
+                                        <td>
+                                            <div class="event-wrap">
+                                                <h3><a href="#">PHIL 200W: Ancient Greek Philosophy</a></h3>
+                                                <div class="meta">
+                                                    <div class="organizers">
+                                                        <a href="https://www.ratemyprofessors.com/ShowRatings.jsp?tid=2399919" target="_blank">Jeremy Bell</a>
+                                                    </div>
+                                                    <div class="categories">
+                                                        <a href="#">Mon/Wed/Fri</a>
+                                                    </div>
+                                                    <div class="time">
+                                                        <span></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="r-no">
+                                                <span>Callaway Center N118</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="primary-btn">
+                                                <a class="btn btn-primary">Read More</a>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <input type="button" value="Remove" onclick="remove()">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade active show" id="friday" role="tabpanel" aria-labelledby="friday-tab">
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="text-center" scope="col">Time</th>
+                                        <th scope="col">Course</th>
+                                        <th scope="col">Location</th>
+                                        <th class="text-center" scope="col">Info</th>
+                                        <th scope="col">Remove</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="inner-box">
+                                        <th scope="row">
+                                            <div class="event-date">
+                                                <p>8:30 AM - 9:45 AM</p>
+                                            </div>
+                                        </th>
+                                        <td>
+                                            <div class="event-wrap">
+                                                <h3><a href="#">CS 326: Analysis of Algorithms</a></h3>
+                                                <div class="meta">
+                                                    <div class="organizers">
+                                                        <a href="https://www.ratemyprofessors.com/ShowRatings.jsp?tid=1083351" target="_blank">Michaelangelo Grigni</a>
+                                                    </div>
+                                                    <div class="categories">
+                                                        <a href="#">Mon/Wed</a>
+                                                    </div>
+                                                    <div class="time">
+                                                        <span></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="r-no">
+                                                <span>Math &amp; Science Center W201</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="primary-btn">
+                                                <a class="btn btn-primary">Read More</a>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <input type="button" value="Remove" onclick="remove()">
+                                        </td>
+                                    </tr>
+                                    <tr class="inner-box">
+                                        <th scope="row">
+                                            <div class="event-date">
+                                                <p>10:00 AM - 10:50 AM</p>
+                                            </div>
+                                        </th>
+                                        <td>
+                                            <div class="event-wrap">
+                                                <h3><a href="#">PHIL 200W: Ancient Greek Philosophy</a></h3>
+                                                <div class="meta">
+                                                    <div class="organizers">
+                                                        <a href="https://www.ratemyprofessors.com/ShowRatings.jsp?tid=2399919" target="_blank">Jeremy Bell</a>
+                                                    </div>
+                                                    <div class="categories">
+                                                        <a href="#">Mon/Wed/Fri</a>
+                                                    </div>
+                                                    <div class="time">
+                                                        <span></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="r-no">
+                                                <span>Callaway Center N118</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="primary-btn">
+                                                <a class="btn btn-primary">Read More</a>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <input type="button" value="Remove" onclick="remove()">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="primary-btn text-center">
+                    <a href="#" class="btn btn-primary">Download Schedule</a>
+                </div>
             </div>
+            <!-- /col end-->
         </div>
-    </nav>
-    <main class="page lanidng-page">
-        <section class="portfolio-block block-intro"><div class="container">
-    <div class="table-responsive">
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Time</th>
-                <th>Mon</th>
-                <th>Tues</th>
-                <th>Wed</th>
-                <th>Thurs</th>
-                <th>Fri</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>8</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>9</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>10</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>11</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>12</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>4</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>5</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-        </tbody>
-    </table>
+        <!-- /row end-->
+    </div>
 </div>
-</div></section>
-        <section class="portfolio-block photography"></section>
-        <section class="portfolio-block skills">
-            <div class="container">
-                <div class="heading">
-                    <h2>Special Skills</h2>
-                </div>
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="card special-skill-item border-0">
-                            <div class="card-header bg-transparent border-0"><i class="icon ion-ios-star-outline"></i></div>
-                            <div class="card-body">
-                                <h3 class="card-title">Web Design</h3>
-                                <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card special-skill-item border-0">
-                            <div class="card-header bg-transparent border-0"><i class="icon ion-ios-lightbulb-outline"></i></div>
-                            <div class="card-body">
-                                <h3 class="card-title">Interface Design</h3>
-                                <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card special-skill-item border-0">
-                            <div class="card-header bg-transparent border-0"><i class="icon ion-ios-gear-outline"></i></div>
-                            <div class="card-body">
-                                <h3 class="card-title">Photography and Print</h3>
-                                <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-    <section class="portfolio-block website gradient">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-12 col-lg-5 offset-lg-1 text">
-                    <h3>Website Project</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eget velit ultricies, feugiat est sed, efr nunc, vivamus vel accumsan dui. Quisque ac dolor cursus, volutpat nisl vel, porttitor eros.</p>
-                </div>
-                <div class="col-md-12 col-lg-5">
-                    <div class="portfolio-laptop-mockup">
-                        <div class="screen">
-                            <div class="screen-content" style="background-image:url(&quot;assets/img/tech/image6.png&quot;);"></div>
-                        </div>
-                        <div class="keyboard"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <footer class="page-footer">
-        <div class="container">
-            <div class="links"><a href="/about.html">About Us</a></div>
-            <div class="social-icons"></div>
-        </div>
-    </footer>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/functions.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/pikaday.min.js"></script>
+    <script src="assets/js/sticky.js"></script>
     <script src="assets/js/theme.js"></script>
-    
 </body>
 
 </html>
