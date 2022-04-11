@@ -25,5 +25,5 @@ def search_classes(prefix, class_list):
 
 class_list = make_class_list("pushin-pp/website/json/classes.json")
 # print(class_list)
-res = search_classes("CS 3", class_list)
+res = search_classes("CS 2", class_list)
 print(res)

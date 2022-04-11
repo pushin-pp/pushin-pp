@@ -17,14 +17,13 @@ def login():
             if check_password_hash(user.password, password):
                 flash("Logged in successfully", category = "success")
                 login_user(user, remember=True)
-                redirect(url_for("views.home"))
-
+                return redirect(url_for("views.home"))
             else:
                 flash("Incorrect password. Try again.", category = "error")
         else:
             flash("Entered email is not associated with an existing account.", category = "error")
 
-    return render_template("login_main.html")
+    return render_template("login.html", user = current_user)
 
 @auth.route("/logout", methods = ["GET", "POST"])
 @login_required
@@ -63,7 +62,7 @@ def sign_up():
             flash("Account created.", category = "success")
 
             return redirect(url_for("views.home"))
-    return render_template("sign_up.html")
+    return render_template("sign_up.html", user = current_user)
 
 
 
