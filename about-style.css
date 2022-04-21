@@ -3,6 +3,18 @@
     margin-bottom: 20px;
 }
 
+.navbar {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background: linear-gradient(120deg, #7F70F5, #0EA0FF);
+    color: #fff;
+  }
+
 .welcome-section p {
     line-height: 50px;
     margin-bottom: 15px;
