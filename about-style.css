@@ -17,7 +17,16 @@
     padding-bottom: 0.5rem;
     background: linear-gradient(120deg, #7F70F5, #0EA0FF);
     color: #fff;
-  }
+}
+
+.navbar-brand {
+    margin-left: 100px;
+}
+
+.nav-item {
+    padding-right: 45px;
+    font-weight: bolder;
+}
 
 .welcome-section p {
     line-height: 50px;
