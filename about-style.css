@@ -28,6 +28,10 @@
     font-weight: bolder;
 }
 
+.nav-link {
+    font-weight: 700;
+}
+
 .welcome-section p {
     line-height: 50px;
     margin-bottom: 15px;
